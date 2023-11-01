@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,800&display=swap');
 
 :root {
-    --color-primary: #FFE5CA;
+    --color-primary: #ffc98b;
     --color-golld: #FFDD83;
     --color-font-primary: #FE6244;
     --color-font-secondary: #706233;
@@ -82,10 +82,11 @@ nav span {
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
 }
 
 nav ul li {
-    margin-left: 2rem;
     display: flex;
     align-items: center;
 }
@@ -150,9 +151,10 @@ nav ul .btn-color a {
 }
 
 .hero-section .img-wrap img {
-    width: 250px;
+    width: 550px;
     height: 500px;
     object-fit: cover;
+    object-position: 0 -200px;
 }
 
 
@@ -196,7 +198,7 @@ nav ul .btn-color a {
     height: 135px;
     border-radius: 50%;
     color: whitesmoke;
-    background: var(--color-font-secondary) linear-gradient(to right, transparent 50%, var(--color-font-primary) 0);
+    background: #3d3d3d linear-gradient(to right, transparent 50%, var(--color-font-primary) 0);
 }
 
 .about-section .text-wrap .progress-container .progress::before {
@@ -213,7 +215,7 @@ nav ul .btn-color a {
     position: absolute;
     inset: 10px;
     border-radius: 50%;
-    background: var(--color-description);
+    background: var(--color-primary);
 } 
 
 .about-section .text-wrap .progress-container .progress::before {
@@ -460,12 +462,16 @@ footer .footer-text {
         padding-top: 10rem;
     }
 
+    .hero-section  .img-wrap img {
+        object-position: 0;
+    }
+
     .about-section .img-wrap {
-        width: 100%;
+        width: 100vw;
     }
 
     .about-section .text-wrap {
-        width: 100%;
+        width: 100vw;
         display: flex;
         align-items: center;
     }
@@ -534,13 +540,13 @@ footer .footer-text {
 
     @media screen and (min-width: 0) and (max-width: 768px) {
         .hero-section .text-wrap {
-            width: 100%;
+            width: 100vw;
             order: 2;
             text-align: center;
         }
 
         .hero-section .img-wrap {
-            width: 100%;
+            width: 100vw;
             order: 1;
         }
 
@@ -557,5 +563,17 @@ footer .footer-text {
         max-width: 100%;
         margin: 0 auto;
     }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul .btn {
+       margin-top: 1rem; 
+    }
     
+    .about-section .img-wrap img {
+        max-width: 350px;
+    }
+
 }
