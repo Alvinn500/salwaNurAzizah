@@ -368,10 +368,30 @@ nav ul .btn-color a {
     margin-bottom: 1rem;
 }
 
-.hire-section .text-wrap a i {
+.hire-section .text-wrap h3 {
+    color: var(--color-font-secondary);
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.hire-section .text-wrap .contact .ig,
+.hire-section .text-wrap .contact .email {
+    display: flex;
+    align-items: center;
+}
+
+.hire-section .text-wrap .contact div {
+    display: inline;
+}
+
+.hire-section .text-wrap .contact a {
+    margin-right: .5rem;
+}
+
+.hire-section .text-wrap .contact a i {
     color: var(--color-font-secondary);
     font-size: 1.8rem;
-    margin-right: .6rem;
 }
 
 .hire-section .text-wrap .btn-color {
