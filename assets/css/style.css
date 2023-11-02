@@ -282,8 +282,10 @@ nav ul .btn-color a {
 }
 
 .project-section .card-container .card .img-card {
-    width: 325px;
-    border-radius: 10px;
+    width: 550px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 .project-section .card-container .card h3,
@@ -363,7 +365,13 @@ nav ul .btn-color a {
 .hire-section .text-wrap p {
     font-size: var(--size-desc-font);
     color: var(--color-font-secondary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hire-section .text-wrap a i {
+    color: var(--color-font-secondary);
+    font-size: 1.8rem;
+    margin-right: .6rem;
 }
 
 .hire-section .text-wrap .btn-color {
