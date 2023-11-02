@@ -10,7 +10,7 @@
     --size-desc-font: 1.2rem;
     --padding-inline: 1.5rem;
 }
-
+ 
 * {
     padding: 0;
     margin: 0;
@@ -289,6 +289,35 @@ nav ul .btn-color a {
 .project-section .card-container .card h3,
 .project-section .card-container .card p {
     color: var(--color-font-secondary);
+}
+
+.certificate-section {
+    padding: 5rem var(--padding-inline);
+}
+
+.certificate-section h1 {
+    font-size: var(--size-title-font);
+    color: var(--color-font-primary);
+    margin-bottom: .5rem;
+}
+
+.certificate-section p {
+    font-size: var(--size-desc-font);
+    color: var(--color-description);
+    margin-bottom: 1.5rem;
+}
+
+.certificate-section .certificate-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+    justify-content: center;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+.certificate-section .certificate-container img {
+    width: 350px;
 }
 
 
